@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="main">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Конструктор процессов</title>
+		<link rel="icon" href="favicon.ico" type="image/ico">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/popup.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</head>
+	<body>
+		<div class="header"><h1 class="text">Конструктор процессов</h1></div>
+
+		<div class="levels" id="user_levels">
+			<div class="start" id="start">
+				<svg>
+					<circle cx="50%" cy="50%" r="20" fill="green">
+				</svg>
+			</div>
+
+			<div levels></div>
+
+			<div class="new_level">
+				<svg>
+					<circle cx="50%" cy="50%" r="20" fill="#cccccc" />
+				</svg>
+				<div style="height: 0; width: 15px; border: 1px solid gray; left: 50%; bottom: 50%; transform: translate(-50%, -200%);"></div>
+				<div style="height: 15px; width: 0px; border: 1px solid gray; left: 50%; bottom: 50%; transform: translate(-50%, -80%);"></div>
+			</div>
+		</div>
+	</body>
+</html>

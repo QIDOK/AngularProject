@@ -1,0 +1,170 @@
+.winform {
+    border: 2px solid black;
+    border-radius: 0.5em;
+    background-color: #c0c0c0;
+    text-align: center;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	z-index: 101;
+}
+
+.wincontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 0.5em;
+    height: 93%;
+    width: 95%;
+    background-color: #FFFFE0;
+	z-index: 102;
+}
+
+.closed {
+    position: fixed;
+    left: 94.75%;
+    cursor: pointer;
+	z-index: 102;
+}
+
+.black {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 100;
+}
+
+.wincontent2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5em;
+    height: 50%;
+    width: 25%;
+    background-color: #FFFFFF;
+	z-index: 101;
+}
+
+.winheader {
+    top: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #05fcbdd6;
+    border-radius: 0.3em;
+}
+
+.winheader h2 {
+	text-align: center;
+    transform: translate(0%, 100%);
+    width: 100%;
+    margin: 0;
+}
+.wincontent2 form {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 85%;
+}
+
+::-webkit-input-placeholder {
+	text-align:center;
+   color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align:center;
+   color: black;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align:center;
+   color: black;
+}
+
+:-ms-input-placeholder {
+   text-align:center;
+   color: black;
+}
+
+.wincontent2 form input[type=text] {
+	border-radius: 20rem;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.wincontent2 form input[type="submit"] {
+	font-weight: 900;
+    width: 100%;
+    margin-top: 25px;
+    border: 0px;
+    padding: 5px;
+    border-radius: 20em 10em;
+    font-size: 20px;
+}
+
+@media(min-width:1715px) and (max-width:1920px){
+	.wincontent2 {
+		max-height: 60%;
+		max-width: 50%;
+	}
+}
+@media(min-width: 872px) and (max-width:1388px){
+	.wincontent2 {
+		max-height: 60%;
+		min-width: 40%;
+	}
+}
+@media(min-height:616px) and (max-height:829px){
+	.wincontent2 {
+		min-height: 65%;
+	}
+}
+@media(max-height:815px){
+	.wincontent2 {
+		min-height: 80%;
+	}
+}
+@media(min-width: 575px) and (max-width:871px){
+	.wincontent2 {
+		min-width: 60%;
+	}
+}
+@media(min-width: 507px) and (max-width:574px){
+	.wincontent2 {
+		min-width: 70%;
+	}
+}
+@media(min-width: 435px) and (max-width:506px){
+	.wincontent2 {
+		min-width: 80%;
+	}
+}
+@media(min-width: 280px) and (max-width:434px){
+	.wincontent2 {
+		min-width: 90%;
+	}
+}
+@media(min-width: 280px) and (max-width:385px){
+	.wincontent2 input[type=text]{
+		font-size: 15px;
+	}
+}
