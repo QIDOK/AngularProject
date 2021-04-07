@@ -26,13 +26,6 @@
 	z-index: 102;
 }
 
-.closed {
-    position: fixed;
-    left: 94.75%;
-    cursor: pointer;
-	z-index: 102;
-}
-
 .black {
     height: 100%;
     width: 100%;
@@ -52,7 +45,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 0.5em;
-    height: 50%;
+    height: 40%;
     width: 25%;
     background-color: #FFFFFF;
 	z-index: 101;
@@ -67,17 +60,27 @@
 }
 
 .winheader h2 {
-	text-align: center;
-    transform: translate(0%, 100%);
+    position: relative;
+    left: 5%;
+    transform: translate(0, 50%);
     width: 100%;
     margin: 0;
+    font-family: cursive;
 }
 .wincontent2 form {
 	position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -20%);
     width: 85%;
+    font-size: 24px;
+}
+
+.wincontent2 form label {
+    font-size: 26px;
+    font-weight: 900;
+    font-family: cursive;
+    margin-bottom: 15px;
 }
 
 ::-webkit-input-placeholder {
@@ -106,9 +109,19 @@
     width: 100%;
     margin-bottom: 20px;
     height: 40px;
-    padding: 30px;
     font-size: 20px;
     text-align: center;
+}
+
+.wincontent2 form input[type=timer] {
+    border-radius: 20rem;
+    outline: none;
+    width: 45%;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .wincontent2 form input[type="submit"] {
@@ -119,6 +132,12 @@
     padding: 5px;
     border-radius: 20em 10em;
     font-size: 20px;
+    background-color: #05fcbdd6;
+}
+
+.wincontent2 form input {
+    font-weight: 600;
+    outline: 0;
 }
 
 @media(min-width:1715px) and (max-width:1920px){
@@ -167,4 +186,16 @@
 	.wincontent2 input[type=text]{
 		font-size: 15px;
 	}
+}
+
+@media(min-width: 872px) and (max-width:975px) {
+    .wincontent2 input[type=timer]{
+        width: 44% !important;
+    }
+}
+
+@media(min-width: 1389px) and (max-width:1560px) {
+    .wincontent2 input[type=timer]{
+        width: 44% !important;
+    }
 }
