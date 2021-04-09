@@ -57,9 +57,26 @@ MainModule.directive('levels', function() {
 						$("#time").css({"color":"red", "font-size":"22px"})
 						$("#time").html("Время на выполнение:<br>Хотя бы одно число должно быть положительным!")
 
+					} else if(Number(minutes) > 59 ) {
+
+						$(this.minutes).css({"border":"2px solid red"});
+
+						$("#time").css({"color":"red", "font-size":"21px"})
+						$("#time").html("Время на выполнение:<br>Максимальное значение для минут: 59!")
+
 					} else {
 
-
+						$(".black").remove();
+						$(".wincontent2").remove();
+						// level = level+1;
+						element.append("\
+							<div class=\"level\">\
+								<svg>\
+									<circle cx=\"50%\" cy=\"50%\" r=\"20\" fill=\"#cccccc\" />\
+								</svg>\
+							</div>\
+						");
+						element.append("<div class=\"next_level\"></div>");
 
 					}
 
